@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Calculator App</title>
+
+    <!-- Custom styles for this template go here -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="calculator" class="container-calculator rounded-corners">
+      <div id="divScreen">
+        <input type="text" id="txtScreen" class="form-control container-screen rounded-corners" placeholder="0" disabled maxlength="18">
+      </div>
+
+      <div id="row-zero" class="container-row">
+        <div id="divClear" class="btn-calculator btn-special"><button id="btnClear" class="button" type="button" value="clear">C</button></div>
+        <div id="divNegative" class="btn-calculator btn-special"><button id="btnNegative" class="button" type="button" value="negative">&plus;/&minus;</button></div>
+        <div id="divPercent" class="btn-calculator btn-special"><button id="btnPercent" class="button" type="button" value="percent">&percnt;</button></div>
+        <div id="divDivide" class="btn-calculator btn-function"><button id="btnDivide" class="button" type="button btn-function" value="/">&div;</button></div>
+      </div>
+
+      <div id="row-one" class="container-row">
+        <div id="div7" class="btn-calculator"><button id="btn7" class="button" type="button" value="7">7</button></div>
+        <div id="div8" class="btn-calculator"><button id="btn8" class="button" type="button" value="8">8</button></div>
+        <div id="div9" class="btn-calculator"><button id="btn9" class="button" type="button" value="9">9</button></div>
+        <div id="divMultiply" class="btn-calculator btn-function"><button id="btnMultiply" class="button btn-function" type="button" value="*">&times;</button></div>
+      </div>
+
+      <div id="row-two" class="container-row">
+        <div id="div4" class="btn-calculator"><button id="btn4" class="button" type="button" value="4">4</button></div>
+        <div id="div5" class="btn-calculator"><button id="btn5" class="button" type="button" value="5">5</button></div>
+        <div id="div6" class="btn-calculator"><button id="btn6" class="button" type="button" value="6">6</button></div>
+        <div id="divSubtract" class="btn-calculator btn-function"><button id="btnSubtract" class="button btn-function" type="button" value="-">&minus;</button></div>
+      </div>
+
+      <div id="row-three" class="container-row">
+        <div id="div1" class="btn-calculator"><button id="btn1" class="button" type="button" value="1">1</button></div>
+        <div id="div2" class="btn-calculator"><button id="btn2" class="button" type="button" value="2">2</button></div>
+        <div id="div3" class="btn-calculator"><button id="btn3" class="button" type="button" value="3">3</button></div>
+        <div id="divAdd" class="btn-calculator btn-function"><button id="btnAdd" class="button btn-function" type="button" value="+">&plus;</button></div>
+      </div>
+
+      <div id="row-four" class="container-row">
+        <div id="div0" class="btn-calculator btn-long"><button id="btn0" class="button" type="button" value="0">0</button></div>
+        <div id="divDecimal" class="btn-calculator"><button id="btnDecimal" class="button" type="button" value=".">.</button></div>
+        <div id="divEqual" class="btn-calculator btn-function"><button id="btnEqual" class="button" type="button btn-function" value="equals">&equals;</button></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
