@@ -2,6 +2,50 @@ body {
   background-color: lightgray;
 }
 
+.portfolio {
+  z-index: 1;
+  float: right;
+}
+
+/*** SideBar ***/
+.sidebar {
+  width: 115px;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.technology-header {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: steelblue;
+  padding-left: 5px;
+}
+
+.sidebar-icon-language {
+  width: 80px;
+  height: 80px;
+  padding-bottom: 20px;
+}
+
 .container-calculator {
   position: absolute;
   margin: auto;
